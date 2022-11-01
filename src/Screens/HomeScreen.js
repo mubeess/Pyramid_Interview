@@ -10,11 +10,13 @@ import Menu from '../Components/Menu'
 import AmounList from '../Components/AmounList'
 import ItemMenu from '../Components/ItemMenu'
 
+
 export default function HomeScreen() {
   const graphSelection=['1H','1D','1W','1M','1Y','ALL']
   const menuList=['Overview','Arts','Crypto','Stocks','Estate']
   const [activeGraphIndex,setActive]=useState(0)
   const [activeMenuIndex,setActiveMenu]=useState(0)
+  
   return (
     <ScrollView style={styles.container}>
       <StatusBar barStyle='dark-content' backgroundColor={Colors.primary}/>
@@ -52,7 +54,7 @@ export default function HomeScreen() {
      
      <View style={styles.amountList}>
    <AmounList amount='$38,650.31' text='Invested in assets'/>
-   <AmounList amount='$38,650.31' text='Invested in assets'/>
+   <AmounList amount='$650.31' text='Cash Balance'/>
      </View>
       
   
