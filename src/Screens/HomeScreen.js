@@ -18,10 +18,11 @@ export default function HomeScreen() {
   const [activeMenuIndex,setActiveMenu]=useState(0)
   
   return (
-    <ScrollView style={styles.container}>
+    <View style={styles.container}>
       <StatusBar barStyle='dark-content' backgroundColor={Colors.primary}/>
       <AppHeader/>
       <Divider/>
+      <ScrollView>
       <PortfolioBalance/>
       <View style={styles.graph}>
       <Graph/>
@@ -61,7 +62,8 @@ export default function HomeScreen() {
   <View style={styles.itemMenu}>
     <ItemMenu/>
   </View>
-    </ScrollView>
+  </ScrollView>
+    </View>
   )
 }
 

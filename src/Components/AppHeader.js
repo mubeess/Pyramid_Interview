@@ -14,7 +14,7 @@ export default function AppHeader() {
 
     <AppText header={true} text='Portfolio'/>
 
-     <TargetIcon/> 
+     <TargetIcon style={styles.icon}/> 
     </SafeAreaView>
   )
 }
@@ -26,10 +26,12 @@ const styles = StyleSheet.create({
  justifyContent:'space-between',
  alignItems:'center',
  position:'relative',
- paddingHorizontal:20
+ paddingHorizontal:20,
+ 
  },
  imageContainer:{
-position:'relative'
+position:'relative',
+marginLeft:Platform.OS=='ios'?20:0
  },
  image:{
     width:32,
@@ -42,5 +44,8 @@ position:'relative'
   backgroundColor:Colors.active,
   borderRadius:20,
   right:0
+ },
+ icon:{
+  marginRight:Platform.OS=='ios'?20:0
  }
 })

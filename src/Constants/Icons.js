@@ -98,9 +98,9 @@ xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAA
     
 }
 
-export const TargetIcon=()=>{
+export const TargetIcon=({style})=>{
     return(
-        <Svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <Svg style={style} width="24" height="24" viewBox="0 0 24 24" fill="none">
 <Rect width="24" height="24" fill="url(#pattern0)"/>
 <Defs>
 <Pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
